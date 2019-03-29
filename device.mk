@@ -296,7 +296,8 @@ TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service
+    android.hardware.power@1.3-service.sm6150-libperfmgr \
+    powerhint.json
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -346,7 +347,9 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/qcom-caf/sm8150 \
+    hardware/google/pixel
 
 # Telephony
 PRODUCT_PACKAGES += \
