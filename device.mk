@@ -318,6 +318,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
+# QTI Perf Component
+TARGET_COMMON_QTI_COMPONENTS := perf
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
